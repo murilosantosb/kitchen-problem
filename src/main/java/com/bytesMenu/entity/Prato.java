@@ -8,10 +8,11 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "pratos")
 @Setter
+@Getter
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class Prato {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
